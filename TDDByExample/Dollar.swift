@@ -17,13 +17,4 @@ class Dollar: Money {
     func times(_ multiplier: Int) -> Dollar {
         return Dollar(amount * multiplier)
     }
-    
- 
-    
-}
-
-extension Dollar: Equatable {
-    static func == (_ lhs: Dollar, _ rhs: Dollar) -> Bool {
-        return lhs.amount == rhs.amount
-    }
 }

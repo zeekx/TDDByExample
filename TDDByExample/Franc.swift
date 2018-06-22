@@ -18,9 +18,3 @@ class Franc: Money {
         return Dollar(amount * multiplier)
     }
 }
-
-extension Franc: Equatable {
-    static func == (_ lhs: Franc, _ rhs: Franc) -> Bool {
-        return lhs.amount == rhs.amount
-    }
-}

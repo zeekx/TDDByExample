@@ -7,10 +7,21 @@
 //
 
 import Foundation
-class Money {
+class Money: NSObject {
     internal var amount = Int(0)
     
+    override func isEqual(_ object: Any?) -> Bool {
+        guard let money = object as? Money else { return false }
+        return self.className == money.className && amount == money.amount
+    }
+    
     func equals(_ dollar: Money) -> Bool {
-        return amount == dollar.amount
+        return self.isEqual(to: dollar)
+    }
+}
+
+extension Money {
+    static func == (_ lhs: Money, _ rhs: Money) -> Bool {
+        return  lhs.isEqual(rhs)
     }
 }
