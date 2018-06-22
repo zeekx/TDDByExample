@@ -11,9 +11,14 @@ import Foundation
 class Money: NSObject {
     internal var amount = Int(0)
     
+    internal override init() {  //抽象类
+        super.init()
+    }
+    
     static func dollar(_ amount: Int) -> Dollar {
         return Dollar(amount)
     }
+
     override func isEqual(_ object: Any?) -> Bool {
         guard let money = object as? Money else { return false }
         return self.className == money.className && amount == money.amount
@@ -22,6 +27,7 @@ class Money: NSObject {
     func equals(_ dollar: Money) -> Bool {
         return self.isEqual(to: dollar)
     }
+    
 }
 
 extension Money {
