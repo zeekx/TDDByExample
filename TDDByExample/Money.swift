@@ -40,11 +40,15 @@ class Money: NSObject {
 
     override func isEqual(_ object: Any?) -> Bool {
         guard let money = object as? Money else { return false }
-        return self.className == money.className && amount == money.amount
+        return self.currency() == money.currency() && amount == money.amount
     }
     
     func equals(_ dollar: Money) -> Bool {
         return self.isEqual(to: dollar)
+    }
+    
+    override var description: String {
+        return "\(className)->\(currency):\(amount)"
     }
     
 }
