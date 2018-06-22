@@ -28,4 +28,7 @@ class DollarTests: XCTestCase {
         XCTAssertEqual(15, production.amount)
     }
 
+    func testEquality() {
+        XCTAssertTrue(Dollar(5).equals(Dollar(5)))
+    }
 }
