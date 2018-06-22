@@ -21,4 +21,11 @@ class Dollar {
     func equals(_ dollar: Dollar) -> Bool {
         return amount == dollar.amount
     }
+    
+}
+
+extension Dollar: Equatable {
+    static func == (_ lhs: Dollar, _ rhs: Dollar) -> Bool {
+        return false
+    }
 }
