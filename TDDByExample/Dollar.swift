@@ -8,7 +8,7 @@
 
 import Foundation
 class Dollar {
-    var amount = Int(0)
+    var amount = Int(10)
     
     init(_ amount: Int) {
         
