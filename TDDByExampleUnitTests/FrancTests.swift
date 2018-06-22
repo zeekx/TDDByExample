@@ -21,14 +21,14 @@ class FrancTests: XCTestCase {
     }
 
     func testFrancMultiplication() {
-        let five = Franc(5)
-        XCTAssertEqual(Franc(10), five.times(2))
-        XCTAssertEqual(Franc(15), five.times(3))
-        XCTAssertNotEqual(Franc(20), five.times(3))
+        let five = Money.franc(5) as! Franc
+        XCTAssertEqual(Money.franc(10), five.times(2))
+        XCTAssertEqual(Money.franc(15), five.times(3))
+        XCTAssertNotEqual(Money.franc(20), five.times(3))
     }
 
     func testEquality() {
-        XCTAssertTrue(Franc(5).equals(Franc(5)))
-        XCTAssertFalse(Franc(5).equals(Franc(6)))
+        XCTAssertTrue(Money.franc(5).equals(Money.franc(5)))
+        XCTAssertFalse(Money.franc(5).equals(Money.franc(6)))
     }
 }

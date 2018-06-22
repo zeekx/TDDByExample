@@ -15,8 +15,12 @@ class Money: NSObject {
         super.init()
     }
     
-    static func dollar(_ amount: Int) -> Dollar {
+    static func dollar(_ amount: Int) -> Money {
         return Dollar(amount)
+    }
+    
+    static func franc(_ amount: Int) -> Money {
+        return Franc(amount)
     }
 
     override func isEqual(_ object: Any?) -> Bool {
