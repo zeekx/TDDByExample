@@ -7,8 +7,8 @@
 //
 
 import Foundation
-class Franc {
-    var amount = Int(0)
+class Franc: Money {
+    internal var amount = Int(0)
     
     init(_ amount: Int) {
         self.amount = amount
