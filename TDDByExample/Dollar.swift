@@ -8,7 +8,6 @@
 
 import Foundation
 class Dollar: Money {
-    private var _currency: String!
     init(_ amount: Int) {
         super.init()
         _currency = "USD"
@@ -18,9 +17,4 @@ class Dollar: Money {
     func times(_ multiplier: Int) -> Dollar {
         return Dollar(amount * multiplier)
     }
-    
-    override func currency() -> String {
-        return _currency
-    }
-
 }

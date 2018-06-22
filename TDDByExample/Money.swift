@@ -10,6 +10,7 @@ import Foundation
 
 class Money: NSObject {
     internal var amount = Int(0)
+    internal var _currency: String!
     
     internal override init() {  //抽象类
         super.init()
@@ -24,7 +25,7 @@ class Money: NSObject {
     }
     
     func currency() -> String {
-        fatalError("Subclass should implement")
+        return _currency
     }
 
     override func isEqual(_ object: Any?) -> Bool {

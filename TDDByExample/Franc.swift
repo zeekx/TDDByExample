@@ -8,7 +8,6 @@
 
 import Foundation
 class Franc: Money {
-    private var _currency: String!
     init(_ amount: Int) {
         super.init()
         _currency = "CHF"
@@ -18,8 +17,5 @@ class Franc: Money {
     func times(_ multiplier: Int) -> Franc {
         return Franc(amount * multiplier)
     }
-    
-    override func currency() -> String {
-        return _currency
-    }
+
 }
