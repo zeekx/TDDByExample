@@ -17,11 +17,11 @@ class Money: NSObject {
     }
     
     static func dollar(_ amount: Int) -> Money {
-        return Dollar(amount)
+        return Dollar(amount, "USD")
     }
     
     static func franc(_ amount: Int) -> Money {
-        return Franc(amount)
+        return Franc(amount, "CHF")
     }
     
     func currency() -> String {

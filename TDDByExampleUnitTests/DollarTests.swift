@@ -31,7 +31,7 @@ class DollarTests: XCTestCase {
         XCTAssertTrue(Money.dollar(5) == Money.dollar(5))
         XCTAssertTrue(Money.dollar(5).equals(Money.dollar(5)))
         XCTAssertFalse(Money.dollar(5).equals(Money.dollar(6)))
-        XCTAssertFalse(Money.dollar(5).equals(Franc(6)))
+        XCTAssertFalse(Money.dollar(5).equals(Money.franc(6)))
     }
     
     func testCurrency() {
