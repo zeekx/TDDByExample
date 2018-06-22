@@ -19,6 +19,6 @@ class Dollar {
     }
     
     func equals(_ dollar: Dollar) -> Bool {
-        return true
+        return amount == dollar.amount
     }
 }
