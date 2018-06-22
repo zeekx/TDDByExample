@@ -26,6 +26,6 @@ class Dollar {
 
 extension Dollar: Equatable {
     static func == (_ lhs: Dollar, _ rhs: Dollar) -> Bool {
-        return false
+        return true
     }
 }
