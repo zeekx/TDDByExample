@@ -33,4 +33,8 @@ class DollarTests: XCTestCase {
         XCTAssertFalse(Money.dollar(5).equals(Money.dollar(6)))
         XCTAssertFalse(Money.dollar(5).equals(Franc(6)))
     }
+    
+    func testCurrency() {
+        XCTAssertEqual("USD", Money.dollar(0).currency())
+    }
 }

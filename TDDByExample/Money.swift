@@ -22,6 +22,10 @@ class Money: NSObject {
     static func franc(_ amount: Int) -> Money {
         return Franc(amount)
     }
+    
+    func currency() -> String {
+        fatalError("Subclass should implement")
+    }
 
     override func isEqual(_ object: Any?) -> Bool {
         guard let money = object as? Money else { return false }
