@@ -9,4 +9,8 @@
 import Foundation
 class Money {
     internal var amount = Int(0)
+    
+    func equals(_ dollar: Money) -> Bool {
+        return amount == dollar.amount
+    }
 }

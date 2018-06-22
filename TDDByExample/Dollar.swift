@@ -18,9 +18,7 @@ class Dollar: Money {
         return Dollar(amount * multiplier)
     }
     
-    func equals(_ dollar: Money) -> Bool {
-        return amount == dollar.amount
-    }
+ 
     
 }
 

@@ -17,11 +17,6 @@ class Franc: Money {
     func times(_ multiplier: Int) -> Dollar {
         return Dollar(amount * multiplier)
     }
-    
-    func equals(_ dollar: Money) -> Bool {
-        return amount == dollar.amount
-    }
-    
 }
 
 extension Franc: Equatable {

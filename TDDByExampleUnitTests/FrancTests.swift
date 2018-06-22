@@ -27,4 +27,8 @@ class FrancTests: XCTestCase {
         XCTAssertNotEqual(Dollar(20), five.times(3))
     }
 
+    func testEquality() {
+        XCTAssertTrue(Franc(5).equals(Franc(5)))
+        XCTAssertFalse(Franc(5).equals(Franc(6)))
+    }
 }
