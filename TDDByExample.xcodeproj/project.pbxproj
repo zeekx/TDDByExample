@@ -82,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				0AF6CE5420DCC93900A2DBA8 /* Dollar.swift */,
-				0AF6CE4120DCC7C100A2DBA8 /* main.swift */,
 				0AF6CE5A20DCD7B400A2DBA8 /* Franc.swift */,
+				0AF6CE4120DCC7C100A2DBA8 /* main.swift */,
 				0AF6CE5F20DCD9B600A2DBA8 /* Money.swift */,
 			);
 			path = TDDByExample;

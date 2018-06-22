@@ -35,7 +35,7 @@ class Money: NSObject {
     }
     
     func times(_ multiplier: Int) -> Money {
-        fatalError("Subclass should implement")
+        return Money(amount * multiplier, _currency)
     }
 
     override func isEqual(_ object: Any?) -> Bool {
