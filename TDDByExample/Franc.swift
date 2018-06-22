@@ -14,7 +14,7 @@ class Franc: Money {
         self.amount = amount
     }
     
-    func times(_ multiplier: Int) -> Dollar {
-        return Dollar(amount * multiplier)
+    func times(_ multiplier: Int) -> Franc {
+        return Franc(amount * multiplier)
     }
 }

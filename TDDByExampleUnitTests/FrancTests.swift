@@ -22,9 +22,9 @@ class FrancTests: XCTestCase {
 
     func testFrancMultiplication() {
         let five = Franc(5)
-        XCTAssertEqual(Dollar(10), five.times(2))
-        XCTAssertEqual(Dollar(15), five.times(3))
-        XCTAssertNotEqual(Dollar(20), five.times(3))
+        XCTAssertEqual(Franc(10), five.times(2))
+        XCTAssertEqual(Franc(15), five.times(3))
+        XCTAssertNotEqual(Franc(20), five.times(3))
     }
 
     func testEquality() {
