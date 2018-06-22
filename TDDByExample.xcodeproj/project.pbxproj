@@ -12,6 +12,9 @@
 		0AF6CE5520DCC93900A2DBA8 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5420DCC93900A2DBA8 /* Dollar.swift */; };
 		0AF6CE5820DCC96C00A2DBA8 /* DollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5720DCC96C00A2DBA8 /* DollarTests.swift */; };
 		0AF6CE5920DCCA1D00A2DBA8 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5420DCC93900A2DBA8 /* Dollar.swift */; };
+		0AF6CE5B20DCD7B400A2DBA8 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5A20DCD7B400A2DBA8 /* Franc.swift */; };
+		0AF6CE5C20DCD7B400A2DBA8 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5A20DCD7B400A2DBA8 /* Franc.swift */; };
+		0AF6CE5E20DCD8F200A2DBA8 /* FrancTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5D20DCD8F200A2DBA8 /* FrancTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,8 @@
 		0AF6CE5020DCC92D00A2DBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF6CE5420DCC93900A2DBA8 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 		0AF6CE5720DCC96C00A2DBA8 /* DollarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarTests.swift; sourceTree = "<group>"; };
+		0AF6CE5A20DCD7B400A2DBA8 /* Franc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Franc.swift; sourceTree = "<group>"; };
+		0AF6CE5D20DCD8F200A2DBA8 /* FrancTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrancTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 			children = (
 				0AF6CE5420DCC93900A2DBA8 /* Dollar.swift */,
 				0AF6CE4120DCC7C100A2DBA8 /* main.swift */,
+				0AF6CE5A20DCD7B400A2DBA8 /* Franc.swift */,
 			);
 			path = TDDByExample;
 			sourceTree = "<group>";
@@ -87,6 +93,7 @@
 				0AF6CE4E20DCC92D00A2DBA8 /* TDDByExampleUnitTests.swift */,
 				0AF6CE5020DCC92D00A2DBA8 /* Info.plist */,
 				0AF6CE5720DCC96C00A2DBA8 /* DollarTests.swift */,
+				0AF6CE5D20DCD8F200A2DBA8 /* FrancTests.swift */,
 			);
 			path = TDDByExampleUnitTests;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF6CE5B20DCD7B400A2DBA8 /* Franc.swift in Sources */,
 				0AF6CE4220DCC7C100A2DBA8 /* main.swift in Sources */,
 				0AF6CE5520DCC93900A2DBA8 /* Dollar.swift in Sources */,
 			);
@@ -188,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF6CE5C20DCD7B400A2DBA8 /* Franc.swift in Sources */,
 				0AF6CE4F20DCC92D00A2DBA8 /* TDDByExampleUnitTests.swift in Sources */,
+				0AF6CE5E20DCD8F200A2DBA8 /* FrancTests.swift in Sources */,
 				0AF6CE5920DCCA1D00A2DBA8 /* Dollar.swift in Sources */,
 				0AF6CE5820DCC96C00A2DBA8 /* DollarTests.swift in Sources */,
 			);

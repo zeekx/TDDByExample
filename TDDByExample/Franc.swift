@@ -1,5 +1,5 @@
 //
-//  Dollar.swift
+//  Franc.swift
 //  TDDByExample
 //
 //  Created by Milo on 2018/6/22.
@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Dollar {
+class Franc {
     var amount = Int(0)
     
     init(_ amount: Int) {
@@ -24,8 +24,8 @@ class Dollar {
     
 }
 
-extension Dollar: Equatable {
-    static func == (_ lhs: Dollar, _ rhs: Dollar) -> Bool {
+extension Franc: Equatable {
+    static func == (_ lhs: Franc, _ rhs: Franc) -> Bool {
         return lhs.amount == rhs.amount
     }
 }
