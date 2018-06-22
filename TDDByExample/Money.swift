@@ -16,6 +16,12 @@ class Money: NSObject {
         super.init()
     }
     
+    init(_ amount: Int, _ currency: String) {
+        super.init()
+        _currency = currency
+        self.amount = amount
+    }
+    
     static func dollar(_ amount: Int) -> Money {
         return Dollar(amount, "USD")
     }
