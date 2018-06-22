@@ -8,9 +8,9 @@
 
 import Foundation
 class Dollar: Money {
-    internal var amount = Int(0)
     
     init(_ amount: Int) {
+        super.init()
         self.amount = amount
     }
     
@@ -18,7 +18,7 @@ class Dollar: Money {
         return Dollar(amount * multiplier)
     }
     
-    func equals(_ dollar: Dollar) -> Bool {
+    func equals(_ dollar: Money) -> Bool {
         return amount == dollar.amount
     }
     

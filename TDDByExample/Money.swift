@@ -8,5 +8,5 @@
 
 import Foundation
 class Money {
-    
+    internal var amount = Int(0)
 }
