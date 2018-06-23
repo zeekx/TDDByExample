@@ -57,6 +57,10 @@ class Money {
         return "\(class_getName)->\(currency):\(amount)"
     }
     
+    func reduce(_ to: String) -> Money {
+        return self
+    }
+    
 }
 
 extension Money: Expression {

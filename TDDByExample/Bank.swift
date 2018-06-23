@@ -11,7 +11,7 @@ import Foundation
 class Bank {
     func reduce(_ source: Expression, _ to: String) -> Money {
         if let money = source as? Money {
-            return money
+            return money.reduce(to)
         }
         guard let sum = source as? Sum else {
             assertionFailure("\(#function) receive source as Expression type")
