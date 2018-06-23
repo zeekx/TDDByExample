@@ -21,9 +21,13 @@ class MoneyTests: XCTestCase {
     }
 
     func testSimplyAddition() {
-        let sum = Money.dollar(5).plus(Money.dollar(5))
-        XCTAssertTrue(Money.dollar(10).equals(sum))
+        let five = Money.dollar(5)
+        let sum = five.plus(five)
+        let bank = Bank()
+        let reduced = bank.reduce(sum, "USD")
+        XCTAssertTrue(Money.dollar(10).equals(reduced))
     }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

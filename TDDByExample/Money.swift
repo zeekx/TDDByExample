@@ -8,16 +8,18 @@
 
 import Foundation
 
-class Money: NSObject {
+protocol Expression {
+    
+}
+
+class Money {
     internal var amount = Int(0)
     internal var _currency: String!
     
-    internal override init() {  //抽象类
-        super.init()
+    internal init() {  //抽象类
     }
     
     init(_ amount: Int, _ currency: String) {
-        super.init()
         _currency = currency
         self.amount = amount
     }
@@ -38,26 +40,30 @@ class Money: NSObject {
         return Money(amount * multiplier, _currency)
     }
 
-    override func isEqual(_ object: Any?) -> Bool {
+    func isEqual(_ object: Any?) -> Bool {
         guard let money = object as? Money else { return false }
         return self.currency() == money.currency() && amount == money.amount
     }
     
     func equals(_ dollar: Money) -> Bool {
-        return self.isEqual(to: dollar)
+        return self.isEqual( dollar)
     }
     
     func plus(_ addend: Money) -> Money {
         return Money(amount + addend.amount, _currency)
     }
     
-    override var description: String {
-        return "\(className)->\(currency):\(amount)"
+    var description: String {
+        return "\(class_getName)->\(currency):\(amount)"
     }
     
 }
 
-extension Money {
+extension Money: Expression {
+    
+}
+
+extension Money: Equatable {
     static func == (_ lhs: Money, _ rhs: Money) -> Bool {
         return  lhs.isEqual(rhs)
     }
