@@ -43,6 +43,12 @@ class MoneyTests: XCTestCase {
         XCTAssertEqual(Money.dollar(7), result)
     }
     
+    func testReduceMoney() {
+        let bank = Bank()
+        let result = bank.reduce(Money.dollar(1), "USD")
+        XCTAssertEqual(Money.dollar(1), result)
+    }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
