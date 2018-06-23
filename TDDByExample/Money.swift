@@ -47,6 +47,10 @@ class Money: NSObject {
         return self.isEqual(to: dollar)
     }
     
+    func plus(_ addend: Money) -> Money {
+        return Money(amount + addend.amount, _currency)
+    }
+    
     override var description: String {
         return "\(className)->\(currency):\(amount)"
     }

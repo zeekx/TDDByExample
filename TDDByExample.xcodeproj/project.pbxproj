@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A42A56120DE438600CC382A /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42A56020DE438600CC382A /* MoneyTests.swift */; };
 		0AF6CE4220DCC7C100A2DBA8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE4120DCC7C100A2DBA8 /* main.swift */; };
 		0AF6CE5520DCC93900A2DBA8 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5420DCC93900A2DBA8 /* Dollar.swift */; };
 		0AF6CE5820DCC96C00A2DBA8 /* DollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5720DCC96C00A2DBA8 /* DollarTests.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A42A56020DE438600CC382A /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
 		0AF6CE3E20DCC7C100A2DBA8 /* TDDByExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDDByExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF6CE4120DCC7C100A2DBA8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0AF6CE4C20DCC92D00A2DBA8 /* TDDByExampleUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDByExampleUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				0AF6CE5020DCC92D00A2DBA8 /* Info.plist */,
 				0AF6CE5720DCC96C00A2DBA8 /* DollarTests.swift */,
 				0AF6CE5D20DCD8F200A2DBA8 /* FrancTests.swift */,
+				0A42A56020DE438600CC382A /* MoneyTests.swift */,
 			);
 			path = TDDByExampleUnitTests;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				0AF6CE6120DCD9B600A2DBA8 /* Money.swift in Sources */,
 				0AF6CE5C20DCD7B400A2DBA8 /* Franc.swift in Sources */,
+				0A42A56120DE438600CC382A /* MoneyTests.swift in Sources */,
 				0AF6CE5E20DCD8F200A2DBA8 /* FrancTests.swift in Sources */,
 				0AF6CE5920DCCA1D00A2DBA8 /* Dollar.swift in Sources */,
 				0AF6CE5820DCC96C00A2DBA8 /* DollarTests.swift in Sources */,
