@@ -28,6 +28,14 @@ class MoneyTests: XCTestCase {
         XCTAssertTrue(Money.dollar(10).equals(reduced))
     }
     
+    func testPlusReturnsSum() {
+        let five = Money.dollar(5)
+        let result = five.plus(five)
+        let sum = result as! Sum
+        XCTAssertEqual(five, sum.augend)
+        XCTAssertEqual(five, sum.addend)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

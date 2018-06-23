@@ -49,8 +49,8 @@ class Money {
         return self.isEqual( dollar)
     }
     
-    func plus(_ addend: Money) -> Money {
-        return Money(amount + addend.amount, _currency)
+    func plus(_ addend: Money) -> Expression {
+        return Sum(self, addend)
     }
     
     var description: String {

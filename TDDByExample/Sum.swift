@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class Sum {
+    var augend: Money!
+    var addend: Money!
+    
+    init(_ augend: Money, _ addend: Money) {
+        self.augend = augend
+        self.addend = addend
+    }
+}
+
+extension Sum: Expression {
+    
+}
