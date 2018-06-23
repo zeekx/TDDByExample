@@ -10,6 +10,9 @@ import Foundation
 
 class Bank {
     func reduce(_ source: Expression, _ to: String) -> Money {
-        return Money.dollar(10)
+        guard let sum = source as? Sum else {
+            return Money(-1, "xxx")
+        }
+        return Money(sum.augend.amount + sum.addend.amount, to)
     }
 }
