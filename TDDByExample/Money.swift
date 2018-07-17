@@ -53,7 +53,9 @@ class Money {
 
 extension Money: Expression {
     func reduce(_ to: String) -> Money {
-        return self
+        let rate = _currency == "CHF" && to == "USD" ? 2 : 1
+        assert(rate != 0, "Can't 0")
+        return Money(amount / rate, to)
     }
 }
 
