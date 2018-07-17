@@ -10,13 +10,6 @@ import Foundation
 
 class Bank {
     func reduce(_ source: Expression, _ to: String) -> Money {
-        if let money = source as? Money {
-            return money.reduce(to)
-        }
-        guard let sum = source as? Sum else {
-            assertionFailure("\(#function) receive source as Expression type")
-            return Money(-1, "xxx")
-        }
-        return sum.reduce(to)
+        return source.reduce(to)
     }
 }

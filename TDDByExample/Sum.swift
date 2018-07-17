@@ -11,17 +11,19 @@ import Foundation
 class Sum {
     var augend: Money!
     var addend: Money!
+    private init() {
+        
+    }
     
     init(_ augend: Money, _ addend: Money) {
         self.augend = augend
         self.addend = addend
     }
     
-    func reduce(_ to: String) -> Money {
-        return Money(augend.amount + addend.amount, to)
-    }
 }
 
 extension Sum: Expression {
-    
+    func reduce(_ to: String) -> Money {
+        return Money(augend.amount + addend.amount, to)
+    }
 }

@@ -9,14 +9,14 @@
 import Foundation
 
 protocol Expression {
-    
+    func reduce(_ to: String) -> Money
 }
 
 class Money {
     internal var amount = Int(0)
     private var _currency: String!
     
-    internal init() {  //抽象类
+    private init() {
     }
     
     init(_ amount: Int, _ currency: String) {
@@ -48,14 +48,13 @@ class Money {
         return "\(class_getName)->\(currency):\(amount)"
     }
     
-    func reduce(_ to: String) -> Money {
-        return self
-    }
     
 }
 
 extension Money: Expression {
-    
+    func reduce(_ to: String) -> Money {
+        return self
+    }
 }
 
 extension Money: Equatable {
