@@ -28,8 +28,8 @@ class FrancTests: XCTestCase {
     }
 
     func testEquality() {
-        XCTAssertTrue(Money.franc(5).equals(Money.franc(5)))
-        XCTAssertFalse(Money.franc(5).equals(Money.franc(6)))
+        XCTAssertTrue(Money.franc(5) == Money.franc(5))
+        XCTAssertFalse(Money.franc(5) == Money.franc(6))
     }
     
     func testCurrency() {

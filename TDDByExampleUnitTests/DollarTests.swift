@@ -29,9 +29,9 @@ class DollarTests: XCTestCase {
 
     func testEquality() {
         XCTAssertTrue(Money.dollar(5) == Money.dollar(5))
-        XCTAssertTrue(Money.dollar(5).equals(Money.dollar(5)))
-        XCTAssertFalse(Money.dollar(5).equals(Money.dollar(6)))
-        XCTAssertFalse(Money.dollar(5).equals(Money.franc(6)))
+        XCTAssertTrue(Money.dollar(5) == Money.dollar(5))
+        XCTAssertFalse(Money.dollar(5) == Money.dollar(6))
+        XCTAssertFalse(Money.dollar(5) == Money.franc(6))
     }
     
     func testCurrency() {
@@ -39,6 +39,6 @@ class DollarTests: XCTestCase {
     }
     
     func testDifferentClassEqaulity() {
-        XCTAssertTrue(Money(10, "USD").equals(Dollar(10, "USD")))
+        XCTAssertTrue(Money(10, "USD") == Money.dollar(10))
     }
 }

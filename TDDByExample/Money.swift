@@ -14,7 +14,7 @@ protocol Expression {
 
 class Money {
     internal var amount = Int(0)
-    internal var _currency: String!
+    private var _currency: String!
     
     internal init() {  //抽象类
     }
@@ -25,11 +25,11 @@ class Money {
     }
     
     static func dollar(_ amount: Int) -> Money {
-        return Dollar(amount, "USD")
+        return Money(amount, "USD")
     }
     
     static func franc(_ amount: Int) -> Money {
-        return Franc(amount, "CHF")
+        return Money(amount, "CHF")
     }
     
     func currency() -> String {
@@ -38,15 +38,6 @@ class Money {
     
     func times(_ multiplier: Int) -> Money {
         return Money(amount * multiplier, _currency)
-    }
-
-    func isEqual(_ object: Any?) -> Bool {
-        guard let money = object as? Money else { return false }
-        return self.currency() == money.currency() && amount == money.amount
-    }
-    
-    func equals(_ dollar: Money) -> Bool {
-        return self.isEqual( dollar)
     }
     
     func plus(_ addend: Money) -> Expression {
@@ -69,6 +60,6 @@ extension Money: Expression {
 
 extension Money: Equatable {
     static func == (_ lhs: Money, _ rhs: Money) -> Bool {
-        return  lhs.isEqual(rhs)
+        return lhs.currency() == rhs.currency() && lhs.amount == rhs.amount
     }
 }
