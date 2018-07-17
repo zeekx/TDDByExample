@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A332FE520FDD4F40080D207 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A332FE420FDD4F40080D207 /* Pair.swift */; };
+		0A332FE620FDD4F40080D207 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A332FE420FDD4F40080D207 /* Pair.swift */; };
+		0A332FE820FDDD7C0080D207 /* BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A332FE720FDDD7C0080D207 /* BankTests.swift */; };
 		0A42A56120DE438600CC382A /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42A56020DE438600CC382A /* MoneyTests.swift */; };
 		0A42A56320DE479F00CC382A /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42A56220DE479F00CC382A /* Bank.swift */; };
 		0A42A56420DE479F00CC382A /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42A56220DE479F00CC382A /* Bank.swift */; };
@@ -32,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A332FE420FDD4F40080D207 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		0A332FE720FDDD7C0080D207 /* BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTests.swift; sourceTree = "<group>"; };
 		0A42A56020DE438600CC382A /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
 		0A42A56220DE479F00CC382A /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		0A42A56520DE497200CC382A /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 				0AF6CE5F20DCD9B600A2DBA8 /* Money.swift */,
 				0A42A56220DE479F00CC382A /* Bank.swift */,
 				0A42A56520DE497200CC382A /* Sum.swift */,
+				0A332FE420FDD4F40080D207 /* Pair.swift */,
 			);
 			path = TDDByExample;
 			sourceTree = "<group>";
@@ -98,6 +104,7 @@
 				0AF6CE5720DCC96C00A2DBA8 /* DollarTests.swift */,
 				0AF6CE5D20DCD8F200A2DBA8 /* FrancTests.swift */,
 				0A42A56020DE438600CC382A /* MoneyTests.swift */,
+				0A332FE720FDDD7C0080D207 /* BankTests.swift */,
 			);
 			path = TDDByExampleUnitTests;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 				0A42A56320DE479F00CC382A /* Bank.swift in Sources */,
 				0AF6CE6020DCD9B600A2DBA8 /* Money.swift in Sources */,
 				0A42A56620DE497200CC382A /* Sum.swift in Sources */,
+				0A332FE520FDD4F40080D207 /* Pair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,10 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF6CE6120DCD9B600A2DBA8 /* Money.swift in Sources */,
+				0A332FE820FDDD7C0080D207 /* BankTests.swift in Sources */,
 				0A42A56720DE497200CC382A /* Sum.swift in Sources */,
 				0A42A56120DE438600CC382A /* MoneyTests.swift in Sources */,
 				0AF6CE5E20DCD8F200A2DBA8 /* FrancTests.swift in Sources */,
 				0AF6CE5820DCC96C00A2DBA8 /* DollarTests.swift in Sources */,
+				0A332FE620FDD4F40080D207 /* Pair.swift in Sources */,
 				0A42A56420DE479F00CC382A /* Bank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

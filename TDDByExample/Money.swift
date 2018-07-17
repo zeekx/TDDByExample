@@ -53,7 +53,9 @@ class Money {
 
 extension Money: Expression {
     func reduce(_ bank: Bank, _ to: String) -> Money {
-        let rate = bank.rate(currency(), to)
+        guard let rate = bank.rate(currency(), to) else {
+            fatalError("Rate is optional!")
+        }
         return Money(amount / rate, to)
     }
 }
