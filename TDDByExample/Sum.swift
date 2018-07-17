@@ -23,7 +23,7 @@ class Sum {
 }
 
 extension Sum: Expression {
-    func reduce(_ to: String) -> Money {
+    func reduce(_ bank: Bank, _ to: String) -> Money {
         return Money(augend.amount + addend.amount, to)
     }
 }

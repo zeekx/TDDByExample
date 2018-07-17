@@ -9,7 +9,7 @@
 import Foundation
 
 protocol Expression {
-    func reduce(_ to: String) -> Money
+    func reduce(_ bank: Bank, _ to: String) -> Money
 }
 
 class Money {
@@ -52,9 +52,8 @@ class Money {
 }
 
 extension Money: Expression {
-    func reduce(_ to: String) -> Money {
-        let rate = _currency == "CHF" && to == "USD" ? 2 : 1
-        assert(rate != 0, "Can't 0")
+    func reduce(_ bank: Bank, _ to: String) -> Money {
+        let rate = bank.rate(currency(), to)
         return Money(amount / rate, to)
     }
 }
