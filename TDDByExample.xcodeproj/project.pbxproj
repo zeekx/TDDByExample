@@ -15,6 +15,7 @@
 		0A42A56420DE479F00CC382A /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42A56220DE479F00CC382A /* Bank.swift */; };
 		0A42A56620DE497200CC382A /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42A56520DE497200CC382A /* Sum.swift */; };
 		0A42A56720DE497200CC382A /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42A56520DE497200CC382A /* Sum.swift */; };
+		0A5CC0DB20FF227400B4F9F9 /* SumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CC0DA20FF227400B4F9F9 /* SumTests.swift */; };
 		0AF6CE4220DCC7C100A2DBA8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE4120DCC7C100A2DBA8 /* main.swift */; };
 		0AF6CE5820DCC96C00A2DBA8 /* DollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5720DCC96C00A2DBA8 /* DollarTests.swift */; };
 		0AF6CE5E20DCD8F200A2DBA8 /* FrancTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF6CE5D20DCD8F200A2DBA8 /* FrancTests.swift */; };
@@ -40,6 +41,7 @@
 		0A42A56020DE438600CC382A /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
 		0A42A56220DE479F00CC382A /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		0A42A56520DE497200CC382A /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
+		0A5CC0DA20FF227400B4F9F9 /* SumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumTests.swift; sourceTree = "<group>"; };
 		0AF6CE3E20DCC7C100A2DBA8 /* TDDByExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDDByExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF6CE4120DCC7C100A2DBA8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0AF6CE4C20DCC92D00A2DBA8 /* TDDByExampleUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDByExampleUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				0AF6CE5D20DCD8F200A2DBA8 /* FrancTests.swift */,
 				0A42A56020DE438600CC382A /* MoneyTests.swift */,
 				0A332FE720FDDD7C0080D207 /* BankTests.swift */,
+				0A5CC0DA20FF227400B4F9F9 /* SumTests.swift */,
 			);
 			path = TDDByExampleUnitTests;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0A42A56120DE438600CC382A /* MoneyTests.swift in Sources */,
 				0AF6CE5E20DCD8F200A2DBA8 /* FrancTests.swift in Sources */,
 				0AF6CE5820DCC96C00A2DBA8 /* DollarTests.swift in Sources */,
+				0A5CC0DB20FF227400B4F9F9 /* SumTests.swift in Sources */,
 				0A332FE620FDD4F40080D207 /* Pair.swift in Sources */,
 				0A42A56420DE479F00CC382A /* Bank.swift in Sources */,
 			);

@@ -67,6 +67,10 @@ class MoneyTests: XCTestCase {
         XCTAssertEqual(Money.dollar(1), result)
     }
     
+    func testPlusSomeCurrencyReturnMoney() {
+        XCTAssertTrue(Money.dollar(1).plus(Money.dollar(1)) as? Money != nil )
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

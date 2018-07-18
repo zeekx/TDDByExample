@@ -11,6 +11,7 @@ import Foundation
 protocol Expression {
     func reduce(_ bank: Bank, _ to: String) -> Money
     func plus(_ addend: Expression) -> Expression
+    func times(_ multiplier: Int) -> Expression
 }
 
 class Money {
@@ -37,15 +38,9 @@ class Money {
         return _currency
     }
     
-    func times(_ multiplier: Int) -> Expression {
-        return Money(amount * multiplier, _currency)
-    }
-    
-    
     var description: String {
         return "\(class_getName)->\(currency):\(amount)"
     }
-    
     
 }
 
@@ -60,6 +55,11 @@ extension Money: Expression {
     func plus(_ addend: Expression) -> Expression {
         return Sum(self, addend)
     }
+    
+    func times(_ multiplier: Int) -> Expression {
+        return Money(amount * multiplier, _currency)
+    }
+
 }
 
 extension Money: Equatable {

@@ -22,9 +22,14 @@ class Sum {
 }
 
 extension Sum: Expression {
-    func plus(_ addend: Expression) -> Expression {
-        fatalError("Empty!")
+    func times(_ multiplier: Int) -> Expression {
+        return Sum(augend.times(multiplier), addend.times(multiplier))
     }
+
+    func plus(_ addend: Expression) -> Expression {
+        return Sum(self, addend)
+    }
+    
     
     func reduce(_ bank: Bank, _ to: String) -> Money {
         let amount = augend.reduce(bank, to).amount + addend.reduce(bank, to).amount
