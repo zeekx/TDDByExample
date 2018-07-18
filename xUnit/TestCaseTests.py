@@ -1,6 +1,13 @@
 from WasRun import WasRun
+from TestCase import TestCase
+# import unittest
 
-test = WasRun("testMethod")
-print(test.wasRun)
-test.run()
-print(test.wasRun)
+class TestCaseTests(TestCase):
+    def testRunning(self):
+        test = WasRun("testMethod")
+        assert(not test.wasRun)
+        test.run()
+        assert(test.wasRun)
+
+
+TestCaseTests("testRunning").run()
