@@ -10,6 +10,7 @@ import Foundation
 
 protocol Expression {
     func reduce(_ bank: Bank, _ to: String) -> Money
+    func plus(_ addend: Expression) -> Expression
 }
 
 class Money {
@@ -36,13 +37,10 @@ class Money {
         return _currency
     }
     
-    func times(_ multiplier: Int) -> Money {
+    func times(_ multiplier: Int) -> Expression {
         return Money(amount * multiplier, _currency)
     }
     
-    func plus(_ addend: Money) -> Expression {
-        return Sum(self, addend)
-    }
     
     var description: String {
         return "\(class_getName)->\(currency):\(amount)"
@@ -57,6 +55,10 @@ extension Money: Expression {
             fatalError("Rate is optional!")
         }
         return Money(amount / rate, to)
+    }
+    
+    func plus(_ addend: Expression) -> Expression {
+        return Sum(self, addend)
     }
 }
 

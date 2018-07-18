@@ -9,21 +9,25 @@
 import Foundation
 
 class Sum {
-    var augend: Money!
-    var addend: Money!
+    var augend: Expression!
+    var addend: Expression!
     private init() {
         
     }
     
-    init(_ augend: Money, _ addend: Money) {
+    init(_ augend: Expression, _ addend: Expression) {
         self.augend = augend
         self.addend = addend
     }
-    
 }
 
 extension Sum: Expression {
+    func plus(_ addend: Expression) -> Expression {
+        fatalError("Empty!")
+    }
+    
     func reduce(_ bank: Bank, _ to: String) -> Money {
-        return Money(augend.amount + addend.amount, to)
+        let amount = augend.reduce(bank, to).amount + addend.reduce(bank, to).amount
+        return Money(amount, to)
     }
 }

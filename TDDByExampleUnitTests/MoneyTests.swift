@@ -28,13 +28,24 @@ class MoneyTests: XCTestCase {
         XCTAssertTrue(Money.dollar(10) == reduced)
     }
     
+    func testMixedAddition() {
+        let fiveBucks: Expression = Money.dollar(5)
+        let tenFrancs: Expression = Money.franc(10)
+        let bank = Bank()
+        bank.addRate("CHF", "USD", 2)
+        let result = bank.reduce(fiveBucks.plus(tenFrancs), "USD")
+        XCTAssertTrue(Money.dollar(10) == result)
+    }
+    
     func testPlusReturnsSum() {
         let five = Money.dollar(5)
         let result = five.plus(five)
         let sum = result as! Sum
-        XCTAssertEqual(five, sum.augend)
-        XCTAssertEqual(five, sum.addend)
+        XCTAssertEqual(five, sum.augend as! Money)
+        XCTAssertEqual(five, sum.addend as! Money)
     }
+    
+
     
     func testReduceSum() {
         let sum = Sum(Money.dollar(3), Money.dollar(4))

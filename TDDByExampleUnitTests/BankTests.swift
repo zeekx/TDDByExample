@@ -23,6 +23,10 @@ class BankTests: XCTestCase {
     func testIdentiferRate() {
         XCTAssertEqual(Bank().rate("USD", "USD")!, 1)
     }
+    
+//    func testNoneRate() {
+//        Money.dollar(1).reduce(Bank(), "yyy")
+//    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
