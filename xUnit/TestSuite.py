@@ -8,11 +8,6 @@ class TestSuite:
         self.tests.append(test)
 
 
-    def run(self):
-        print(self.tests)
-        result = TestResult()
+    def run(self, result):
         for test in self.tests:
             test.run(result)
-            print(test)
-
-        return result
