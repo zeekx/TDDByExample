@@ -8,6 +8,9 @@ class WasRun(TestCase):
         self.wasRun = None
         self.log = "setUp "
 
+    def tearDown(self):
+        self.log = self.log + "tearDown "
+
     def testMethod(self):
         self.wasRun = 1
         self.log = self.log + "testMethod "

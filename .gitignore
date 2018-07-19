@@ -71,6 +71,8 @@ fastlane/test_output
 #python
 
 # Byte-compiled / optimized / DLL files
+xUnit/__pycache__/*.*
+xUnit/__pycache__/
 __pycache__/
 *.py[cod]
 *$py.class
